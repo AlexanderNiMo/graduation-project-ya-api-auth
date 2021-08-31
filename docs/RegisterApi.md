@@ -1,4 +1,4 @@
-# auth.RegisterApi
+# auth_api.RegisterApi
 
 All URIs are relative to *http://localhost:5000/api/v1*
 
@@ -15,13 +15,13 @@ Register user
 ```python
 from __future__ import print_function
 import time
-import auth
-from auth.rest import ApiException
+import auth_api
+from auth_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = auth.RegisterApi()
-body = auth.User() # User | User data.
+api_instance = auth_api.RegisterApi()
+body = auth_api.User() # User | User data.
 
 try:
     # Register user

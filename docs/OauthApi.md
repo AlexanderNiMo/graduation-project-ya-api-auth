@@ -1,4 +1,4 @@
-# auth.OauthApi
+# auth_api.OauthApi
 
 All URIs are relative to *http://localhost:5000/api/v1*
 
@@ -17,12 +17,12 @@ callback for authorise user
 ```python
 from __future__ import print_function
 import time
-import auth
-from auth.rest import ApiException
+import auth_api
+from auth_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = auth.OauthApi()
+api_instance = auth_api.OauthApi()
 
 try:
     # callback for authorise user
@@ -59,12 +59,12 @@ callback for authorise user
 ```python
 from __future__ import print_function
 import time
-import auth
-from auth.rest import ApiException
+import auth_api
+from auth_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = auth.OauthApi()
+api_instance = auth_api.OauthApi()
 code = 'code_example' # str | code for get oauth token
 
 try:
@@ -105,12 +105,12 @@ oauth user
 ```python
 from __future__ import print_function
 import time
-import auth
-from auth.rest import ApiException
+import auth_api
+from auth_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = auth.OauthApi()
+api_instance = auth_api.OauthApi()
 
 try:
     # oauth user

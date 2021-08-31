@@ -1,4 +1,4 @@
-# auth.JwtTokenApi
+# auth_api.JwtTokenApi
 
 All URIs are relative to *http://localhost:5000/api/v1*
 
@@ -16,13 +16,13 @@ validate jwt token
 ```python
 from __future__ import print_function
 import time
-import auth
-from auth.rest import ApiException
+import auth_api
+from auth_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = auth.JwtTokenApi()
-jwt_token = auth.Token() # Token | auth. jwt token.
+api_instance = auth_api.JwtTokenApi()
+jwt_token = auth_api.Token() # Token | auth. jwt token.
 
 try:
     # validate jwt token
@@ -62,14 +62,14 @@ refresh jwt token
 ```python
 from __future__ import print_function
 import time
-import auth
-from auth.rest import ApiException
+import auth_api
+from auth_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = auth.JwtTokenApi()
-jwt_token = auth.Token() # Token | auth. jwt token.
-refresh_token = auth.Token() # Token | refresh token.
+api_instance = auth_api.JwtTokenApi()
+jwt_token = auth_api.Token() # Token | auth. jwt token.
+refresh_token = auth_api.Token() # Token | refresh token.
 
 try:
     # refresh jwt token
