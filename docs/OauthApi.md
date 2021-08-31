@@ -1,4 +1,4 @@
-# swagger_client.OauthApi
+# auth.OauthApi
 
 All URIs are relative to *http://localhost:5000/api/v1*
 
@@ -17,12 +17,12 @@ callback for authorise user
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import auth
+from auth.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.OauthApi()
+api_instance = auth.OauthApi()
 
 try:
     # callback for authorise user
@@ -59,12 +59,12 @@ callback for authorise user
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import auth
+from auth.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.OauthApi()
+api_instance = auth.OauthApi()
 code = 'code_example' # str | code for get oauth token
 
 try:
@@ -105,12 +105,12 @@ oauth user
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import auth
+from auth.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.OauthApi()
+api_instance = auth.OauthApi()
 
 try:
     # oauth user

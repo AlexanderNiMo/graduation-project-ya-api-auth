@@ -1,4 +1,4 @@
-# swagger_client.JwtTokenApi
+# auth.JwtTokenApi
 
 All URIs are relative to *http://localhost:5000/api/v1*
 
@@ -16,13 +16,13 @@ validate jwt token
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import auth
+from auth.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.JwtTokenApi()
-jwt_token = swagger_client.Token() # Token | auth. jwt token.
+api_instance = auth.JwtTokenApi()
+jwt_token = auth.Token() # Token | auth. jwt token.
 
 try:
     # validate jwt token
@@ -62,14 +62,14 @@ refresh jwt token
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import auth
+from auth.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.JwtTokenApi()
-jwt_token = swagger_client.Token() # Token | auth. jwt token.
-refresh_token = swagger_client.Token() # Token | refresh token.
+api_instance = auth.JwtTokenApi()
+jwt_token = auth.Token() # Token | auth. jwt token.
+refresh_token = auth.Token() # Token | refresh token.
 
 try:
     # refresh jwt token

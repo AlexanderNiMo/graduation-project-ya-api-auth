@@ -1,4 +1,4 @@
-# swagger_client.LogoutApi
+# auth.LogoutApi
 
 All URIs are relative to *http://localhost:5000/api/v1*
 
@@ -15,14 +15,14 @@ logout user
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import auth
+from auth.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.LogoutApi()
-jwt_token = swagger_client.Token() # Token | auth. jwt token.
-refresh_token = swagger_client.Token() # Token | refresh token.
+api_instance = auth.LogoutApi()
+jwt_token = auth.Token() # Token | auth. jwt token.
+refresh_token = auth.Token() # Token | refresh token.
 
 try:
     # logout user

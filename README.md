@@ -23,7 +23,7 @@ pip install git+https://github.com/GIT_USER_ID/GIT_REPO_ID.git
 
 Then import the package:
 ```python
-import swagger_client 
+import auth 
 ```
 
 ### Setuptools
@@ -37,7 +37,7 @@ python setup.py install --user
 
 Then import the package:
 ```python
-import swagger_client
+import auth
 ```
 
 ## Getting Started
@@ -47,13 +47,13 @@ Please follow the [installation procedure](#installation--usage) and then run th
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import auth
+from auth.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.JwtTokenApi(swagger_client.ApiClient(configuration))
-jwt_token = swagger_client.Token() # Token | auth. jwt token.
+api_instance = auth.JwtTokenApi(auth.ApiClient(configuration))
+jwt_token = auth.Token() # Token | auth. jwt token.
 
 try:
     # validate jwt token
@@ -63,9 +63,9 @@ except ApiException as e:
     print("Exception when calling JwtTokenApi->check_user_post: %s\n" % e)
 
 # create an instance of the API class
-api_instance = swagger_client.JwtTokenApi(swagger_client.ApiClient(configuration))
-jwt_token = swagger_client.Token() # Token | auth. jwt token.
-refresh_token = swagger_client.Token() # Token | refresh token.
+api_instance = auth.JwtTokenApi(auth.ApiClient(configuration))
+jwt_token = auth.Token() # Token | auth. jwt token.
+refresh_token = auth.Token() # Token | refresh token.
 
 try:
     # refresh jwt token

@@ -1,4 +1,4 @@
-# swagger_client.RoleApi
+# auth.RoleApi
 
 All URIs are relative to *http://localhost:5000/api/v1*
 
@@ -16,16 +16,16 @@ add user role
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import auth
+from auth.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.RoleApi()
-jwt_token = swagger_client.Token() # Token | auth. jwt token.
-refresh_token = swagger_client.Token() # Token | refresh token.
-user_id = swagger_client.UseiId() # UseiId | 
-role = swagger_client.Role() # Role | 
+api_instance = auth.RoleApi()
+jwt_token = auth.Token() # Token | auth. jwt token.
+refresh_token = auth.Token() # Token | refresh token.
+user_id = auth.UseiId() # UseiId | 
+role = auth.Role() # Role | 
 
 try:
     # add user role
@@ -67,16 +67,16 @@ delete user role
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import auth
+from auth.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.RoleApi()
-jwt_token = swagger_client.Token() # Token | auth. jwt token.
-refresh_token = swagger_client.Token() # Token | refresh token.
-user_id = swagger_client.UseiId() # UseiId | 
-role = swagger_client.Role() # Role | 
+api_instance = auth.RoleApi()
+jwt_token = auth.Token() # Token | auth. jwt token.
+refresh_token = auth.Token() # Token | refresh token.
+user_id = auth.UseiId() # UseiId | 
+role = auth.Role() # Role | 
 
 try:
     # delete user role

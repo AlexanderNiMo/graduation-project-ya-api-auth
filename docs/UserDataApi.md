@@ -1,4 +1,4 @@
-# swagger_client.UserDataApi
+# auth.UserDataApi
 
 All URIs are relative to *http://localhost:5000/api/v1*
 
@@ -16,14 +16,14 @@ update user data
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import auth
+from auth.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UserDataApi()
-jwt_token = swagger_client.Token() # Token | auth. jwt token.
-body = swagger_client.UpdateData() # UpdateData |  (optional)
+api_instance = auth.UserDataApi()
+jwt_token = auth.Token() # Token | auth. jwt token.
+body = auth.UpdateData() # UpdateData |  (optional)
 
 try:
     # update user data
@@ -63,13 +63,13 @@ get user data
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import auth
+from auth.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UserDataApi()
-jwt_token = swagger_client.Token() # Token | auth. jwt token.
+api_instance = auth.UserDataApi()
+jwt_token = auth.Token() # Token | auth. jwt token.
 
 try:
     # get user data

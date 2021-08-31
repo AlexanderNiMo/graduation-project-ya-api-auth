@@ -1,4 +1,4 @@
-# swagger_client.LoginApi
+# auth.LoginApi
 
 All URIs are relative to *http://localhost:5000/api/v1*
 
@@ -17,19 +17,19 @@ check multi-factor authentication code
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import auth
+from auth.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: cookieAuth
-configuration = swagger_client.Configuration()
+configuration = auth.Configuration()
 configuration.api_key['SESSION_ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['SESSION_ID'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.LoginApi(swagger_client.ApiClient(configuration))
-body = swagger_client.OTP() # OTP | Credential data.
+api_instance = auth.LoginApi(auth.ApiClient(configuration))
+body = auth.OTP() # OTP | Credential data.
 
 try:
     # check multi-factor authentication code
@@ -69,18 +69,18 @@ Multi-factor authentication
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import auth
+from auth.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: cookieAuth
-configuration = swagger_client.Configuration()
+configuration = auth.Configuration()
 configuration.api_key['SESSION_ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['SESSION_ID'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.LoginApi(swagger_client.ApiClient(configuration))
+api_instance = auth.LoginApi(auth.ApiClient(configuration))
 
 try:
     # Multi-factor authentication
@@ -117,13 +117,13 @@ Login user
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import auth
+from auth.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.LoginApi()
-body = swagger_client.LoginRequest() # LoginRequest | Credential data.
+api_instance = auth.LoginApi()
+body = auth.LoginRequest() # LoginRequest | Credential data.
 
 try:
     # Login user
