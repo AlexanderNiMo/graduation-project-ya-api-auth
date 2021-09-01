@@ -1,6 +1,6 @@
 # auth_api.OauthApi
 
-All URIs are relative to *http://localhost:5000/api/v1*
+All URIs are relative to *http://localhost:5000/auth/api/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
