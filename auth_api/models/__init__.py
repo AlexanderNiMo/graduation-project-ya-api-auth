@@ -27,3 +27,4 @@ from auth_api.models.update_data import UpdateData
 from auth_api.models.usei_id import UseiId
 from auth_api.models.user import User
 from auth_api.models.user_data import UserData
+from auth_api.models.user_short import UserShort
