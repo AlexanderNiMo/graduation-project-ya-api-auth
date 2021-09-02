@@ -1,6 +1,6 @@
 # auth_api.JwtTokenApi
 
-All URIs are relative to *http://localhost:5000/api/v1*
+All URIs are relative to *http://localhost:5000/auth/api/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**refresh_post**](JwtTokenApi.md#refresh_post) | **POST** /refresh | refresh jwt token
 
 # **check_user_post**
-> UserData check_user_post(jwt_token)
+> UserShort check_user_post(jwt_token)
 
 validate jwt token
 
@@ -40,7 +40,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**UserData**](UserData.md)
+[**UserShort**](UserShort.md)
 
 ### Authorization
 
